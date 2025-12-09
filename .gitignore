@@ -1,0 +1,12 @@
+# Python Data Science Ignore
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment (Crucial!)
+venv/
+env/
+
+# Mac/Windows System Files
+.DS_Store
+Thumbs.db
