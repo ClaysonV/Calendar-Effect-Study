@@ -31,7 +31,7 @@ Clone this repository and set up the virtual environment:
 
 ```bash
 # 1. Clone the repository to your local machine
-git clone https://github.com/YourUsername/Calendar-Effects-Study.git
+git clone https://github.com/ClaysonV/Calendar-Effects-Study.git
 cd Calendar-Effects-Study
 
 # 2. Create a Python virtual environment
