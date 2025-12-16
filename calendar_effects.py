@@ -4,6 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
+import warnings
+# Ignore all FutureWarning messages
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # --- Part 1: Data Acquisition ---
 ticker = "SPY"
@@ -18,9 +21,7 @@ returns = data.pct_change().dropna() * 100
 # --- Part 2: Data Preprocessing ---
 returns_df = pd.DataFrame(returns)
 
-# --- THE FIX IS HERE ---
-# We force the column name to be 'Close'. 
-# Without this, yfinance might name it 'SPY', causing the crash later.
+
 returns_df.columns = ['Close'] 
 
 # Feature Engineering
